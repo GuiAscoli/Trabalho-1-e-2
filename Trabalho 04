@@ -1,0 +1,36 @@
+TRABALHO 04
+Aluno: Guilherme Sousa Ascoli
+Estrutura de repetição:
+Código 1: frutas = ["maçã", "banana", "laranja", "morango"]
+for fruta in frutas:
+    print(fruta)
+
+
+Código 2: cores = ["vermelho", "verde", "azul", "amarelo"]
+
+# Iteração sobre a lista de cores usando um loop for
+for cor in cores:
+    print(cor)
+
+
+Código Estrutura de tomada de decisão:
+Código1:
+# Dicionário de pessoas e suas idades
+pessoas = {
+    "João": 20,
+    "Maria": 17,
+    "Carlos": 22,
+    "Ana": 16,
+    "Pedro": 18,
+    "Luiza": 19,
+    "Ricardo": 15,
+    "Fernanda": 21
+}
+
+# Loop através do dicionário
+for pessoa, idade in pessoas.items():
+    # Estrutura de tomada de decisão
+    if idade >= 18:
+        print(f"{pessoa} pode dirigir, pois tem {idade} anos.")
+    else:
+        print(f"{pessoa} não pode dirigir, pois tem {idade} anos.")
