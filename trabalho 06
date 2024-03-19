@@ -1,0 +1,51 @@
+Trabalho 06
+Aluno: Guilherme Sousa Ascoli
+Segue trabalho:
+# Definindo as variáveis
+numeros = [10, 20, 30, 40]
+frase = "Esta é uma frase de exemplo."
+palavra = "Python"
+
+# Calculando a média aritmética dos números
+media = sum(numeros) / len(numeros)
+print("Média dos números:", media)
+
+# Calculando o quadrado de um dos números
+numero_quadrado = numeros[0] ** 2
+print("Quadrado do primeiro número:", numero_quadrado)
+
+# Calculando o dobro de um dos números
+numero_dobro = numeros[1] * 2
+print("O dobro do segundo número:", numero_dobro)
+
+# Calculando a quantidade de letras da palavra
+quantidade_letras = len(palavra)
+print("Quantidade de letras na palavra:", quantidade_letras)
+
+# Calculando a quantidade de espaços em branco da frase
+quantidade_espacos = frase.count(' ')
+print("Quantidade de espaços em branco na frase:", quantidade_espacos)
+
+# Verificando se o primeiro número é maior que o segundo
+primeiro_maior = numeros[0] > numeros[1]
+print("O primeiro número é maior que o segundo:", primeiro_maior)
+
+# Encontrando o maior número
+maior_numero = max(numeros)
+print("O maior número é:", maior_numero)
+
+
+Execução: 
+ython 3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)]
+Type "copyright", "credits" or "license" for more information.
+
+IPython 8.15.0 -- An enhanced Interactive Python.
+
+runfile('C:/Users/202102368405/.spyder-py3/temp.py', wdir='C:/Users/202102368405/.spyder-py3')
+Média dos números: 25.0
+Quadrado do primeiro número: 100
+O dobro do segundo número: 40
+Quantidade de letras na palavra: 6
+Quantidade de espaços em branco na frase: 5
+O primeiro número é maior que o segundo: False
+O maior número é: 40
