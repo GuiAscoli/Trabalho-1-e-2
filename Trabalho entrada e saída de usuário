@@ -1,0 +1,55 @@
+Trabalho Entrada e saída de usuário
+
+def imprimir_informacoes(nome, idade, cidade):
+    print("Nome:", nome, "-", "Idade:", idade, "-", "Cidade:", cidade, end="!\n")
+
+def calcular_operacao():
+    num1 = float(input("Digite o primeiro número: "))
+    num2 = float(input("Digite o segundo número: "))
+    operacao = input("Digite a operação desejada (+, -, *, /): ")
+
+    if operacao == '+':
+        resultado = num1 + num2
+    elif operacao == '-':
+        resultado = num1 - num2
+    elif operacao == '*':
+        resultado = num1 * num2
+    elif operacao == '/':
+        if num2 != 0:
+            resultado = num1 / num2
+        else:
+            print("Erro: divisão por zero!")
+            return
+    
+    print("Resultado da operação:", resultado)
+def lista_de_compras():
+    entrada = input("Digite os itens da lista de compras separados por vírgula: ")
+    itens = entrada.split(',')  # Separa os itens usando vírgula como delimitador
+    print("Lista de compras:")
+    for item in itens:
+        print(item.strip())  # Remove espaços em branco em volta do item, se houver
+def celsius_para_fahrenheit(celsius):
+    fahrenheit = (celsius * 9/5) + 32
+    return fahrenheit
+
+def pedir_nomes():
+    nomes = []
+    while True:
+        nome = input("Digite um nome (ou 'sair' para encerrar): ")
+        if nome.lower() == 'sair':
+            break
+        nomes.append(nome)
+
+    print("Nomes digitados:")
+    for nome in nomes:
+        print(nome)
+
+# Exemplo de uso das funções:
+
+# Solicitar temperatura em Celsius e converter para Fahrenheit
+temperatura_celsius = float(input("Digite a temperatura em graus Celsius: "))
+resultado_fahrenheit = celsius_para_fahrenheit(temperatura_celsius)
+print("Temperatura em Fahrenheit:", resultado_fahrenheit)
+
+# Pedir nomes até que 'sair' seja digitado e imprimir os nomes digitados
+pedir_nomes()
