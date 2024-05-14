@@ -1,0 +1,35 @@
+Trabalho sequencias
+
+def q1():
+    nome = input ('entre com seu nome')
+    f = open ( ' q1.txt ,'' w')
+    f.write(nome)
+    f.close()
+   
+
+
+def q2():
+    arquivo = input('entre com o nome do arquivo :')
+    f = open (arquivo, 'r')
+    print(f.read())
+    f.close ()
+   
+   
+
+def q3():
+    f1 = open ( ' arquivo-exemplo.txt' , 'r')
+    f2 = open ( 'sala.txt,''w')
+    f2.write(f1.read())
+    f1.close()
+    f2.close()
+   
+   
+
+def q4():
+    numero = open('informe o numero: ')
+    f = open('arquivo-exemplo.txt' , 'r')
+    for linha in f:
+        componentes = linha.split(';')
+        if componentes [0] == numero :
+            print(componentes[1])
+    f.close()
