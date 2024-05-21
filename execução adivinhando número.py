@@ -1,0 +1,26 @@
+import random
+
+def lancamento_dado():
+    return random.randint(1, 6)
+
+def adivinhe_o_numero():
+    numero_aleatorio = random.randint(1, 100)
+    tentativas = 0
+    acertou = False
+    print("Adivinhe o número entre 1 e 100")
+
+    while not acertou:
+        palpite = int(input("Digite seu palpite: "))
+        tentativas += 1
+        if palpite < numero_aleatorio:
+            print("Muito baixo!")
+        elif palpite > numero_aleatorio:
+            print("Muito alto!")
+        else:
+            print(f"Você adivinhou em {tentativas} tentativas.")
+            acertou = True
+
+    dado = lancamento_dado()
+    print(f"Você também lançou o dado e obteve: {dado}")
+
+adivinhe_o_numero()
